@@ -49,10 +49,6 @@ This repository contains our comprehensive solution to the **NeurIPS 2025 Open P
 - **Automatic Mixed Precision**: AMP for faster training
 - **Memory Management**: Efficient memory usage and cleanup
 
-### Project Structure
-
-
-
 ## Quick Start
 
 ```bash
@@ -62,8 +58,11 @@ pip install -r requirements.txt
 # Train all models
 python src/train_all_models.py --models GAT GIN GraphSAGE --epochs 50 --k_folds 3
 
+# Run fast inference (generates final predictions)
+python src/inference.py --test_csv data/test.csv --output_dir . --ensemble_method average
+
 # Run ensemble analysis
-python src/analysis/ensemble_analysis.py --mode analysis
+python src/ensemble_analysis.py --mode analysis
 
 # Generate interpretability analysis
 python src/interpretability_analysis.py
@@ -89,6 +88,21 @@ python src/visualization.py
 | Stacking (Ridge) | 0.568 | 2.6% |
 | Blending | 0.565 | 3.1% |
 | Dynamic Ensemble | 0.562 | 3.6% |
+
+## Final Submission
+
+The final predictions are generated using:
+- **Three GNN Models**: GAT, GIN, GraphSAGE
+- **Ensemble Method**: Weighted averaging
+- **Output File**: `final_predictions_YYYYMMDD_HHMMSS.csv`
+- **Format**: SMILES + 5 property predictions (Tg, FFV, Tc, Density, Rg)
+
+## Key Files
+
+- `final_predictions_*.csv`: Final competition submission file
+- `src/inference.py`: Optimized inference script
+- `src/train_all_models.py`: Unified training script
+- `src/advanced_regularization.py`: Advanced features implementation
 
 ## License
 
