@@ -1,0 +1,300 @@
+# Python cache and virtual environment
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+*.pkl
+*.egg-info/
+.venv/
+env/
+venv/
+ENV/
+.ipynb_checkpoints/
+
+# Jupyter Notebook checkpoints
+*.ipynb_checkpoints
+
+# Data files (only keep small samples or structure files)
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.h5
+*.hdf5
+*.json
+*.parquet
+
+# Model weights and large numpy files
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.onnx
+*.safetensors
+*.bin
+
+# Results, logs, and outputs
+*.log
+*.out
+*.err
+*.tmp
+*.bak
+
+# Visualization outputs (since we're now displaying directly)
+visualizations/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.pdf
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Streamlit and matplotlib cache
+.streamlit/
+.matplotlib/
+
+# VSCode and PyCharm project files
+.vscode/
+.idea/
+
+# Environment and config files
+.env
+.env.*
+*.env
+*.yaml
+*.yml
+
+# Build and dist
+build/
+dist/
+*.egg
+*.egg-info/
+
+# Temporary files
+temp/
+tmp/
+cache/
+
+# Training logs and results
+logs/
+results/
+outputs/
+
+# Data directories (but keep the structure)
+data/
+datasets/
+raw_data/
+processed_data/
+
+# Model files (keep structure but ignore weights)
+best_*_model*.pt
+best_*_model_fold_*.pt
+best_*_model_ablation_*.pt
+
+# Training result files
+*_train_loss_*.txt
+*_val_loss_*.txt
+*_training_summary_*.csv
+*_fold_results_*.csv
+*_strategy_results_*.csv
+
+# Analysis reports
+*_analysis_report.md
+*_report_*.md
+
+# Inference outputs
+fast_inference_*.csv
+ensemble_predictions_*.csv
+*_predictions_*.csv
+
+# Tokenizer and model config files
+tokenizer_config*.json
+special_tokens_map*.json
+added_tokens*.json
+config*.json
+spm*.model
+
+# Large data files
+*.csv.bak
+*.csv.tmp
+
+# Backup files
+*.backup
+*.old
+*~
+
+# IDE specific
+*.swp
+*.swo
+*~
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Project specific
+# Keep data structure but ignore large files
+data/train_cleaned.csv
+data/test_cleaned.csv
+
+# Keep model structure but ignore weights
+src/model/
+src/data_part/
+src/analysis/
+
+# Ignore training outputs
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+
+# Ignore visualization outputs (since we display directly now)
+visualizations/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.pdf
+
+# Ignore logs and results
+logs/
+results/
+outputs/
+*.log
+*.out
+*.err
+
+# Ignore temporary files
+temp/
+tmp/
+cache/
+*.tmp
+*.bak
+*.backup
